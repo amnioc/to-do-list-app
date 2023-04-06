@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  background-color: rgb(90, 161, 161);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.checkBox {
+  display: inline-block;
+  margin: 1em;
+}
+li {
+  text-align: left;
+  position: relative;
+  font-size: 18px;
+}
+
+.TaskForm {
+  padding: 25px;
+  background-color: rgb(90, 161, 161);
+  font-size: 18px;
+}
