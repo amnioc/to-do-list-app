@@ -13,19 +13,26 @@ h1 {
   color: black;
 }
 
+#congrats {
+  color: darkgreen;
+}
 ul {
   display: inline-block;
   list-style: none;
-}
-
-.checkBox {
-  display: inline-block;
-  margin: 1em;
 }
 li {
   text-align: left;
   position: relative;
   font-size: 18px;
+}
+
+.checkBox {
+  display: inline-flex;
+  margin: 1em;
+}
+
+#currentTask {
+  display: inline-flex;
 }
 
 .TaskForm {

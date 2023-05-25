@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <TaskList currentList={currentList} />
+      <TaskList updateList={updateList} currentList={currentList} />
       <NewTaskForm updateList={updateList} currentList={currentList} />
     </div>
   );

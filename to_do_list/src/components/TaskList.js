@@ -1,14 +1,25 @@
 const TaskList = (props) => {
+  const { currentList, updateList } = props;
+
+  const deleteTask = (task) => {
+    const taskIndex = currentList.indexOf(task);
+    updateList((currentList) => {
+      return [...currentList].filter((tasks, index) => index !== taskIndex);
+    });
+  };
+
   return (
     <>
       <ul>
         {props.currentList.map((task) => {
           return (
             <li key={task}>
-              <p>
-                <input type="checkbox" id="thisTask" className="checkBox" />
-                {task}
-              </p>
+              <input
+                type="checkbox"
+                className="checkBox"
+                onClick={() => deleteTask(task)}
+              />
+              <p id="currentTask">{task}</p>
             </li>
           );
         })}
