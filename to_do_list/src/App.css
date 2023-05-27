@@ -1,42 +1,64 @@
 .App {
   text-align: center;
+  font-size: 30px;
 }
 
-h1 {
-  background-color: rgb(90, 161, 161);
+.title {
+  background-color: rgb(142, 230, 230);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: black;
 }
 
-#congrats {
+.key-word {
   color: darkgreen;
 }
-ul {
+
+.task-list {
   display: inline-block;
   list-style: none;
 }
-li {
-  text-align: left;
-  position: relative;
-  font-size: 18px;
+
+.each-task {
+  list-style: none;
 }
 
-.checkBox {
+.check-box {
   display: inline-flex;
+  transform: scale(2);
+  justify-items: center;
   margin: 1em;
+  box-shadow: 1, 1, 1, 20px;
 }
 
-#currentTask {
+.task-text {
   display: inline-flex;
 }
 
-.TaskForm {
+.task-form {
   padding: 25px;
   background-color: rgb(90, 161, 161);
-  font-size: 18px;
+}
+
+.input-label {
+  font-weight: bold;
+}
+
+.task-input {
+  padding: 15px 15px;
+  width: 100%;
+  margin: 5px;
+  font-size: 1em;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px 10px;
+}
+
+.popup-image {
+  object-fit: cover;
 }

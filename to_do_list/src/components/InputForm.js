@@ -12,21 +12,21 @@ const NewTaskForm = ({ updateList, currentList }) => {
   };
 
   return (
-    <>
-      <form className="TaskForm" onSubmit={handleSubmit}>
-        <label htmlFor="taskInput">
-          Add a new task:
-          <input
-            id={newTask}
-            value={newTask}
-            onChange={(event) => insertNewTask(event.target.value)}
-          />
-        </label>
-        <button type="submit" id="submitButton">
-          Add This Task
-        </button>
-      </form>
-    </>
+    <form className="task-form" onSubmit={handleSubmit}>
+      <label htmlFor="taskInput" className="input-label">
+        Add a new task:
+        <input
+          id={newTask}
+          className="task-input"
+          value={newTask}
+          onChange={(event) => insertNewTask(event.target.value)}
+          required
+        />
+      </label>
+      <button type="submit" className="button">
+        Add This Task
+      </button>
+    </form>
   );
 };
 
