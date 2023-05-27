@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-const NewTaskForm = ({ updateList, currentList }) => {
+const NewTaskForm = ({
+  updateList,
+  currentList,
+  setUserAction,
+  setThisTask,
+}) => {
   const [newTask, insertNewTask] = useState("");
 
   const handleSubmit = (event) => {
@@ -9,6 +14,8 @@ const NewTaskForm = ({ updateList, currentList }) => {
       return [...currentList, `${newTask}`];
     });
     insertNewTask("");
+    setUserAction("added");
+    setThisTask(newTask);
   };
 
   return (
