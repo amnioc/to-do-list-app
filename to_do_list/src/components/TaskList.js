@@ -1,14 +1,12 @@
-import { useState } from "react";
-
 const TaskList = (props) => {
-  const { currentList, updateList, setTaskDone } = props;
-
+  const { currentList, updateList, setUserAction, setThisTask } = props;
   const deleteTask = (task) => {
+    setUserAction("removed");
+    setThisTask(task);
     const taskIndex = currentList.indexOf(task);
     updateList((currentList) => {
       return [...currentList].filter((tasks, index) => index !== taskIndex);
     });
-    setTimeout(setTaskDone(true), 5);
   };
 
   return (

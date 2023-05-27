@@ -9,17 +9,24 @@ import PopUpMessage from "./components/PopUp";
 
 function App() {
   const [currentList, updateList] = useState(["food shop", "hoover"]);
-  const [taskDone, setTaskDone] = useState(false);
+  const [userAction, setUserAction] = useState("");
+  const [thisTask, setThisTask] = useState("");
   return (
     <div className="App">
       <Header />
       <TaskList
         updateList={updateList}
         currentList={currentList}
-        setTaskDone={setTaskDone}
+        setThisTask={setThisTask}
+        setUserAction={setUserAction}
       />
-      <NewTaskForm updateList={updateList} currentList={currentList} />
-      <PopUpMessage taskDone={taskDone} />
+      <NewTaskForm
+        updateList={updateList}
+        currentList={currentList}
+        setThisTask={setThisTask}
+        setUserAction={setUserAction}
+      />
+      <PopUpMessage userAction={userAction} thisTask={thisTask} />
     </div>
   );
 }

@@ -1,15 +1,21 @@
-const PopUpMessage = (props) => {
-  const { taskDone } = props;
-
-  if (taskDone) {
+const PopUpMessage = ({ userAction, thisTask }) => {
+  if (userAction === "removed") {
     return (
       <article className="celebration-message">
-        <h3 className="key-word">Congrats!!</h3>;
-        <img
-          className="popup-image"
-          alt="small white cat with flower necklace in human hand"
-          href="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        />
+        <h3 className="key-word">
+          Congrats, you have completed{" "}
+          <span className="key-task">{thisTask}</span>
+          <span aria-label="confetti emoji">&#127881;</span>
+        </h3>
+      </article>
+    );
+  } else if (userAction === "added") {
+    return (
+      <article className="added-task">
+        <h3 className="key-word">
+          Added <span className="key-task">{thisTask}</span> to List{" "}
+          <span aria-label="green tick emoji">&#9989;</span>
+        </h3>
       </article>
     );
   }
