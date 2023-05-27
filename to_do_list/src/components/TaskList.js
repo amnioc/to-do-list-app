@@ -1,5 +1,6 @@
 const TaskList = (props) => {
   const { currentList, updateList, setUserAction, setThisTask } = props;
+
   const deleteTask = (task) => {
     setUserAction("removed");
     setThisTask(task);
