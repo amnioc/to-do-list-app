@@ -2,11 +2,7 @@
 
 This Repo contains the following Tiny React Apps:
 
-1. ## Dice Roller
-
-   Taking inspiration from Dungeons & Dragons games, this dice roller can be modified based on a Dungeon Master's instruction!
-
-2. ## To Do List
+1. ## To Do List
    An app that allows the user to add to their to-do list, removing with a check-box = "done!"
 
 These apps utilise React Frameworks.
