@@ -1,13 +1,23 @@
-# Tiny React Apps
+# To Do List - A One Page React App
 
-This Repo contains the following Tiny React Apps:
+Allows the user to add to their personal to-do list, removing with a check-box = "done!" Need to leave and come back? No problem, the app will remember your tasks!
 
-1. ## To Do List
-   An app that allows the user to add to their to-do list, removing with a check-box = "done!"
+Created using React Frameworks, HTML5, CSS.
 
-These apps utilise React Frameworks.
+## How To View App
 
-Tiny applications provide achievable goals, small projects that I am able to start and finish in a matter of days and can potentially improve or scale later (watch this space!)
+On Netlify:
+
+### View via Github
+
+1. fork and clone repo
+2. open repo, type in terminal: "cd to_do_list"
+3. type in terminal: "npm start"
+4. use app! (suggestion: add tasks and hit refresh - your list should still be there)
+
+## Screenshot
+
+<img src="Screenshot_to_do.png" alt="screenshot of Getting Stuff Done app" >
 
 ## Credits
 
