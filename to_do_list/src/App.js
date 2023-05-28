@@ -8,7 +8,7 @@ import NewTaskForm from "./components/InputForm";
 import PopUpMessage from "./components/PopUp";
 
 function App() {
-  const [currentList, updateList] = useState([""]);
+  const [currentList, updateList] = useState();
   const [userAction, setUserAction] = useState("");
   const [thisTask, setThisTask] = useState("");
 
