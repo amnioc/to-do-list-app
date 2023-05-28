@@ -16,6 +16,8 @@ function App() {
     const data = window.localStorage.getItem("taskMemory");
     if (data !== null) {
       updateList(JSON.parse(data));
+    } else {
+      updateList(["example"]);
     }
   }, []);
 
