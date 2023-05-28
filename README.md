@@ -6,7 +6,7 @@ Created using React Frameworks, HTML5, CSS.
 
 ## How To View App
 
-On Netlify:
+On Netlify: https://personal-to-do.netlify.app/
 
 ### View via Github
 
