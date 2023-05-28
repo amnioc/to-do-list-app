@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     const data = window.localStorage.getItem("taskMemory");
-    if (data) {
+    if (data !== null) {
       updateList(JSON.parse(data));
     }
   }, []);
