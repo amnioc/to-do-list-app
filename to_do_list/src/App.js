@@ -28,7 +28,7 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <section className="App">
       <Header />
       <TaskList
         updateList={updateList}
@@ -43,7 +43,7 @@ function App() {
         setUserAction={setUserAction}
       />
       <PopUpMessage userAction={userAction} thisTask={thisTask} />
-    </div>
+    </section>
   );
 }
 
