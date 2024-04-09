@@ -19,6 +19,14 @@ On Netlify: https://personal-to-do.netlify.app/
 
 <img src="Screenshot_to_do.png" alt="screenshot of Getting Stuff Done app" >
 
+### Reflections 09/04/2024
+
+I returned to this app after 11 months, to review code and update CSS for a more responsive, user friendly experience.
+Changes made include:
+
+- consistent semantic HTML
+- updating CSS to reflect different screen sizes
+
 ## Credits
 
 The idea for React tiny apps comes from the following article by Andrew Farmer:
